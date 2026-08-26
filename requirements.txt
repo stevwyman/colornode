@@ -1,0 +1,11 @@
+# CPU wheels keep the image usable on hosts without a GPU (same pattern as textnode).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+opencv-python-headless
+fastapi
+uvicorn[standard]
+python-multipart
+huggingface-hub
+pillow
+numpy

@@ -1,0 +1,16 @@
+services:
+  colornode:
+    image: localhost/colornode:latest
+    container_name: colornode
+    ports:
+      - "8004:8000"
+    restart: unless-stopped
+    volumes:
+      - models:/app/.ddcolor
+    environment:
+      DDCOLOR_HOME: /app/.ddcolor
+      DDCOLOR_MODEL: piddnad/ddcolor_paper_tiny
+
+volumes:
+  models:
+    name: ddcolor_models
