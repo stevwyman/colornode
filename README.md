@@ -8,6 +8,7 @@ hub-and-spoke pattern as [facenode](https://github.com/stevwyman/facenode) and
 The service is stateless: Rootnode sends image bytes, Colornode returns a
 colorized JPEG, then forgets the photo. Weights are cached on a volume.
 
+
 ## Config
 
 Rootless:
